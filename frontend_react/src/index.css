@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+.bodyFlex {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.pageContent {
+  min-height: 90vh;
+}
+
+.navbarShadow {
+  box-shadow: 0 2px 2px -2px #3e525b;
+}
+
+.headerAlert {
+  background:#93a4ad;
+  font-family: Poppins;
+  font-weight: bold;
+  border: 2px solid #3e525b;
+  border-radius: 10px;
+}
+
+.darkFooterGradient {
+  /* ff 3.6+ */
+  background:-moz-linear-gradient(180deg, #20303B 0%, #3E525B 30%); 
+
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-linear-gradient(180deg, #20303B 0%, #3E525B 30%);
+
+  /* opera 11.10+ */
+  background:-o-linear-gradient(180deg, #20303B 0%, #3E525B 30%);
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E525B', endColorstr='#20303B', GradientType=1 );
+
+  /* ie 10+ */
+  background:-ms-linear-gradient(180deg, #20303B 0%, #3E525B 30%);
+
+  /* global 94%+ browsers support */
+  background:linear-gradient(180deg, #20303B 0%, #3E525B 30%);
+}
